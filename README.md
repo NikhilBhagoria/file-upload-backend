@@ -1,0 +1,1 @@
+Node.js + Express backend for handling file uploads using express-fileupload. Supports local file storage and can be easily extended to integrate with Cloudinary for cloud-based uploads.
