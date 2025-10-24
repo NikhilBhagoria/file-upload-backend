@@ -11,7 +11,7 @@ const fileUpload = require('express-fileupload');
 app.use(fileUpload());
 
 const db = require('./config/database');
-db.connect();
+db.connectDB();
 
 const cloudinary = require('./config/cloudinary');
 

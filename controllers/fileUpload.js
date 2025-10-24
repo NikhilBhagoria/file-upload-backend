@@ -5,7 +5,7 @@ exports.localFileUpload = async (req, res) => {
     try {
         // Access the uploaded file via req.file
         const file = req.files.file;
-        const localPath = __dirname + "/uploads/" + Date.now() + "_" `.${file.name.split('.')[1]}`;
+        const localPath = __dirname + "/uploads/" + Date.now() + "_" +`.${file.name.split('.')[1]}`;
 
         // Move the file to the desired location
         await file.mv(localPath, async (err) => {
